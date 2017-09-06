@@ -11,9 +11,9 @@ public class Show extends Applet {
     }
 
     public void paint(Graphics g) {
-       setBackground(Color.BLACK);
+       setBackground(Color.WHITE);
 
-        g.setColor(Color.WHITE);
+        g.setColor(Color.BLACK);
         g.drawLine(50, 200, 200, 200);
         g.drawLine(50, 200, 50, 50);
         g.drawLine(200, 200, 50, 50);
@@ -22,6 +22,18 @@ public class Show extends Applet {
         g.drawRect(70, 350, 30, 50);
         g.drawOval(80, 135, 40, 40);
         g.drawLine(50, 400, 200, 400);
+        g.setColor(Color.black);
+        g.drawLine(500, 200, 500, 600);
+        g.drawLine(500, 200, 800, 200);
+        g.setColor(Color.BLUE);
+        g.fillRect(500, 200, 300, 66);
+        g.setColor(Color.white);
+        g.fillRect(500, 132, 300, 66);
+        g.setColor(Color.red);
+        g.fillRect(500, 66, 300, 66);
+
+        
+
 
 
     }
