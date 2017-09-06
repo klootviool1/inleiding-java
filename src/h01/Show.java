@@ -1,25 +1,25 @@
 package h01;
 
-import java.applet.Applet;
+//Voorbeeld 4.1
+
 import java.awt.*;
+import java.applet.*;
 
-
-
-//importeer de benodigde klassen uit de Java bibliotheek
-
-//een klasse met de naam Show van het type Applet
 public class Show extends Applet {
 
-    //een (lege) methode die de Applet initialiseert
     public void init() {
-        setBackground(Color.WHITE);
     }
-    //een methode die de inhoud van het scherm tekent
-    public void paint(Graphics g) {
-        g.setColor(Color.BLUE);
-        g.drawString("Nikhil", 50, 60 );
-        g.setColor(Color.red);
-        g.drawString("Kashyap", 50 , 80 );
 
+    public void paint(Graphics g) {
+       setBackground(Color.cyan);
+
+        g.drawLine(50, 200, 200, 200);
+        g.drawLine(50, 200, 50, 50);
+        g.drawLine(200, 200, 50, 50);
+        g.drawLine(50, 200, 50, 400);
+        g.drawLine(200, 200, 200, 400);
+        g.drawRect(70, 350, 30, 50);
+        g.drawOval(80, 135, 40, 40);
+        g.drawLine(50, 400, 200, 400);
     }
 }
