@@ -9,8 +9,7 @@ import java.applet.*;
 
         Color opvulkleur;
         Color lijnkleur;
-        int breedte;
-        int hoogte;
+
 
 
         public void init() {
@@ -18,8 +17,6 @@ import java.applet.*;
 
             opvulkleur = Color.MAGENTA;
             lijnkleur = Color.BLACK;
-            breedte = 200;
-            hoogte = 100;
         }
 
         public void paint(Graphics g) {
