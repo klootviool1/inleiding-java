@@ -4,18 +4,21 @@ import java.applet.Applet;
 import java.awt.*;
 
 public class Hoofdstuk6punt2 extends Applet {
-    int a;
-    int b;
-    int c;
-    int uitkomst;
+    double a;
+    double b;
+    double c;
+    double d;
+    long e;
+    double uitkomst;
 
     public void init() {
-        a = 60;
-        b = 3600;
-        c = 86400;
-        uitkomst = (a * 60);
-        uitkomst = (b * 24);
-        uitkomst = (c * 31536000);
+        a = 5.9;
+        b = 6.3;
+        c = 6.9;
+        d = 3;
+        e = 10;
+        uitkomst = (a + b + c) / d * e / e;
+        uitkomst = (int) uitkomst;
     }
 
     public void paint(Graphics g) {
