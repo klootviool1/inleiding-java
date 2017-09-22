@@ -1,4 +1,4 @@
-package h01;
+package h04;
 
 //Voorbeeld 4.1
 

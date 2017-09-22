@@ -1,4 +1,4 @@
-package h01;
+package h04;
 
 import java.applet.Applet;
 import java.awt.*;
@@ -14,7 +14,7 @@ import java.awt.*;
             setBackground(Color.lightGray);
 
             g.setColor(Color.black);
-            g.fillRect(600, 200, 200, 500);
+            g.fillRoundRect(600, 200, 200, 500, 20, 20);
             g.setColor(Color.red);
             g.fillOval(625, 210, 150, 150);
             g.setColor(Color.ORANGE);
