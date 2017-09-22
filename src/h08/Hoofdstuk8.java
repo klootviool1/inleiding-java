@@ -10,21 +10,25 @@ public class Hoofdstuk8 extends Applet {
     Label label;
     String s;
     Button knop;
+    Button knopje;
 
     public void init() {
         tekstvak = new TextField("Klik op mij", 20);
         knop = new Button("OK");
-        knop.addActionListener( new KnopListener() );
+        knop.addActionListener(new KnopListener());
+        knopje = new Button("Reset");
+        knopje.addActionListener(new KnopListener());
         label = new Label("Typ iets in, in dit tekstvak" + "en druk dan op ENTER");
-        tekstvak.addActionListener( new TekstvakListener() );
+        tekstvak.addActionListener(new TekstvakListener());
         add(label);
         add(tekstvak);
         add(knop);
+        add(knopje);
         s = "";
     }
 
     public void paint(Graphics g) {
-        g.drawString(s, 50,50);
+        g.drawString(s, 50, 50);
     }
 
     class TekstvakListener implements ActionListener {
@@ -33,14 +37,23 @@ public class Hoofdstuk8 extends Applet {
             repaint();
         }
 
-        class KnopListener implements ActionListener       {
-            public void actionPeformed( ActionEvent e) {
-                tekstvak.setText("jammer, er staat iets anders");
-                repaint();
-            }
+
+    }
+
+
+    class KnopListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            tekstvak.setText(" ");
+            repaint();
         }
     }
+
+
         }
+
+
+
+
 
 
 
