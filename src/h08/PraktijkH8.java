@@ -88,7 +88,7 @@ public class PraktijkH8 extends Applet {
               String a2 = input2.getText();
               cijfer2 = Double.parseDouble(a2);
 
-              Double uitkomstPlus = cijfer1 / cijfer2;
+              Double uitkomstPlus = cijfer1 + cijfer2;
               input1.setText("" + uitkomstPlus);
               input2.setText("");
           }
