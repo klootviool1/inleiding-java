@@ -3,7 +3,7 @@ package h10;
 
 import java.applet.Applet;
 import java.awt.*;
-import java.awt.event.ActionEvent;
+import java.awt.event.*;
 import java.awt.event.ActionListener;
 
 
@@ -21,12 +21,12 @@ public class Hoofdstuk10_4 extends Applet {
         tekst = "";
         add(label);
         add(tekstvak);
+        labeljaar = new Label("Typ het jaar in.");
         add(labeljaar);
-        add(jaarvak);
         tekst2 = "";
         jaarvak = new TextField("", 20);
-        labeljaar = new Label("Typ het jaar in.");
         jaarvak.addActionListener( new TekstvakListener2());
+        add(jaarvak);
 
     }
 
